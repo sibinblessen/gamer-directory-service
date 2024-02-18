@@ -20,4 +20,9 @@ public class GameController {
     public List<GameDto> getAllGames() {
         return gameService.getAllGames();
     }
+
+    @GetMapping("/{id}")
+    public GameDto getGameById(Long id) {
+        return gameService.getGameDtoById(id);
+    }
 }
